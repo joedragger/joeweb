@@ -1,0 +1,368 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Joe's Website</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/joelogo.png' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Thachil Kalavoor Alappuzha Kerala"><i class="fa fa-map-marker"></i> <span>Thachil Kalavoor Alappuzha Kerala</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="jobinft1995@gmail.com"><i class="fa fa-envelope"></i> <span>jobinft1995@gmail.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://facebook.com/profile.php?id=100004599969112" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/JobinFrancisTh2" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              
+              <a href="https://linkedin.com/in/jobin-francis-thomas-5883ab16a" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/joelogo.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  
+                  <li><a href="{% url 'blog' %}">Blog</a>
+                    
+                  </li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Contact Now Button -->
+            <a href="{% url 'contact' %}" class="btn dento-btn booking-btn">Contact Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/cool.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInUp" data-delay="100ms">Your Website is a Digital sales person.<br>We will Design and Promote your Website.</h2>
+                
+                <div class="welcome-btn-group">
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/cool.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInDown" data-delay="100ms">Your Website is a Digital sales person.<br>We will Design and Promote your Website.</h2>
+                
+                <div class="welcome-btn-group">
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+  
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_genius"></i>
+            <h2><span class="counter">0</span></h2>
+            <h5>Years Of Experience</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_heart_alt"></i>
+            <h2><span class="counter">0</span>+</h2>
+            <h5>Happy Customers</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_book_alt"></i>
+            <h2><span class="counter">0</span></h2>
+            <h5>Projects</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_id"></i>
+            <h2><span class="counter">0</span>+</h2>
+            <h5>Developers</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cool Facts Area End -->
+
+  <!-- Dento Service Area Start -->
+    <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/cool.jpg' %}');">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Service Content -->
+        <div class="col-12 col-lg-6">
+          <div class="service-content mb-30">
+            <!-- Section Heading -->
+            <div class="section-heading white">
+              <h2>Our Services</h2>
+              <div class="line"></div>
+            </div>
+
+            <div class="row">
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/programming.png' %}" alt="">
+                  <h6>Web Development</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/ux.png' %}" alt="">
+                  <h6>UI/UX design</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/analytics.png' %}" alt="">
+                  <h6>SEO Services</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/digital-marketing.png' %}" alt="">
+                  <h6>Digital Marketing</h6>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        
+
+        <!-- Video Area -->
+        <div class="col-12 col-lg-6">
+          <div class="dento-video-area mb-100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_ygOSGmsK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dento Service Area End -->
+
+
+
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/cool.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/joelogo.png' %}" alt=""></a>
+            <p>Web Designing.</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> Thachil Kalavoor Alappuzha Kerala</p>
+              <p><i class="icon_phone"></i> +91 7012 631 967</p>
+              <p><i class="icon_mail"></i> jobinft1995@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>8.00-18.00</span></li>
+              <li><span>Thu-Fri</span> <span>8.00-17.00</span></li>
+              <li><span>Sat</span> <span>9.00-17.00</span></li>
+              <li><span>Sun</span> <span>10.00-17.00</span></li>
+              <li><span>Holiday</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Link</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Social</h5>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://facebook.com/profile.php?id=100004599969112" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/JobinFrancisTh2" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              
+              <a href="https://linkedin.com/in/jobin-francis-thomas-5883ab16a" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

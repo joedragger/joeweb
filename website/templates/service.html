@@ -1,0 +1,353 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Dento - Dentist &amp; Medical HTML Template</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/joelogo.png">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Thachil Kalavoor Alappuzha Kerala"><i class="fa fa-map-marker"></i> <span>Thachil Kalavoor Alappuzha Kerala</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="jobinft1995@gmail.com"><i class="fa fa-envelope"></i> <span>jobinft1995@gmail.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://facebook.com/profile.php?id=100004599969112" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/JobinFrancisTh2" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              
+              <a href="https://linkedin.com/in/jobin-francis-thomas-5883ab16a" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/joelogo.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  
+                  <li><a href="{% url 'blog' %}">Blog</a>
+                    
+                  </li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Contact Now Button -->
+            <a href="{% url 'contact' %}" class="btn dento-btn booking-btn">Contact Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/cool.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Service</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Service</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Services Area Start ***** -->
+  <section class="dento-services-area mt-50 mb-50">
+    <div class="container">
+      <div class="row">
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/programming.png' %}" alt="">
+            </div>
+            <h5>Web Development</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/ux.png' %}" alt="">
+            </div>
+            <h5>UI/UX design</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/analytics.png' %}" alt="">
+
+            </div>
+            <h5>SEO Services</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/digital-marketing.png' %}" alt="">
+            </div>
+            <h5>Digital Marketing</h5>
+            <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
+              mattis mollis maximus.</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+  <!-- ***** Services Area End ***** -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/cool.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Upgrade small businesses with a website.”</h5>
+                <h6>Mark</h6>
+                <p>Business</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Upgrade small businesses with a website.”</h5>
+                <h6>Mark</h6>
+                <p>Business</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Upgrade small businesses with a website.”</h5>
+                <h6>Mark</h6>
+                <p>Business</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+
+  
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/cool.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/joelogo.png' %}" alt=""></a>
+            <p>Web Designing.</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> Thachil Kalavoor Alappuzha Kerala</p>
+              <p><i class="icon_phone"></i> +91 7012 631 967</p>
+              <p><i class="icon_mail"></i> jobinft1995@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>8.00-18.00</span></li>
+              <li><span>Thu-Fri</span> <span>8.00-17.00</span></li>
+              <li><span>Sat</span> <span>9.00-17.00</span></li>
+              <li><span>Sun</span> <span>10.00-17.00</span></li>
+              <li><span>Holiday</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Link</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Social</h5>
+
+            
+            
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://facebook.com/profile.php?id=100004599969112" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/JobinFrancisTh2" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              
+              <a href="https://linkedin.com/in/jobin-francis-thomas-5883ab16a" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
